@@ -1,417 +1,499 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.fondo{
-    background-color: #f8f8f8d0;
+
+.fondo {
+  background-color: #f8f8f8d0;
 }
-.fondo-nav{
-    background-image: linear-gradient(#795f5fd2, #807d7d)
+
+.fondo-nav {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#795f5fd2), to(#c0bcbc));
+  background-image: linear-gradient(#795f5fd2, #c0bcbc);
 }
-.nav-item .nav-link{
-    text-align: center;
-    padding: 0;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+
+.fondo-nav .logo img {
+  height: 80px;
+  width: 80px;
 }
-@keyframes aparecer{
-    0%{
-        opacity: 0.35;
-    }
-    100%{
-        opacity: 1;
-    }
+
+.fondo-nav .navbar-toggler {
+  border: 2px solid #000;
 }
-.navbar-dark .navbar-nav .nav-link{
-    color: #fff;
-    margin-left: 5px;
-    font-size: 30px;
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  margin-left: 5px;
+  font-size: 30px;
 }
-.navbar-dark .navbar-toggler{
-    border: 2px solid #000;
+
+.navbar-dark .navbar-nav .nav-link .fas {
+  margin-right: 15px;
 }
-.navbar-dark .navbar-nav .nav-link:hover{
-    color: #000;
+
+.nav-link {
+  text-align: center;
+  padding: 0;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
-.logo img{
-    height: 80px;
-    width: 80px;
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0.35;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.fas{
-    margin-right: 15px;
+
+@keyframes aparecer {
+  0% {
+    opacity: 0.35;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.sillon{
-    width: 100%;
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #000;
 }
-.sobre{
-    text-align: center;
+
+.sillon {
+  width: 100%;
 }
-.nosotros{
-    text-align: center;
-    padding: 15px;
+
+.sobre {
+  text-align: center;
 }
-.titulo{
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+.nosotros {
+  text-align: center;
+  padding: 15px;
 }
-.contenedordeservicios{
-    display: flex;
+
+.titulo {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.formasdetrabajo{
-    background-color: #795f5fd2;
-    text-align: center;
-    font-size: 25px;
+
+.contenedordeservicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.serviciosp{
-    text-align: center;
-    font-size: 18px;
-    margin: 20px;
+
+.contenedordeservicios .formasdetrabajo {
+  background-color: #795f5fd2;
+  text-align: center;
+  font-size: 25px;
 }
-.precios{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+
+.contenedordeservicios .serviciosp {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px;
 }
-.table{
-    background-color: #a8a6a6;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 30px;
+
+.precios {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
-.findepagina{ 
-    width: 100%;
-    background-color: #795f5fd2;
-    background-image: linear-gradient(#795f5fd2, #807d7d);
-    text-align: center;   
+
+.table {
+  background-color: #c0bcbc;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
 }
-.derechos{
-    width: 100%;
-    color: #000;
-    margin-bottom: 0px;
+
+.findepagina {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c0bcbc), to(#795f5fd2));
+  background-image: linear-gradient(#c0bcbc, #795f5fd2);
+  text-align: center;
 }
+
+.findepagina .derechos {
+  width: 100%;
+  color: #000;
+  margin-bottom: 0px;
+}
+
 /* fin de index */
 /* inicio de galería */
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    text-align: center;
+.container {
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
-.container{
-    margin-top: 5px;
-    margin-bottom: 20px;
+
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  text-align: center;
 }
-.variados{
-    text-align: center;
-    padding: 20px;
-    font-size: 25px;
-    background-color: #c0bcbc;
+
+.contenedor .variados {
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  background-color: #c0bcbc;
 }
-.caracteristicas{
-    text-align: center;
-    margin: 0 60px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+
+.contenedor .caracteristicas {
+  text-align: center;
+  margin: 0 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.img-thumbnail{
-    width: 500px;
-    height: 500px;
-    margin-bottom: 30px;
-    border-radius: 10px;
+
+.contenedor .img-thumbnail {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
+
 /* fin de galeria */
 /* inicio de videos */
-.centrado{
-    text-align: center;
+.centrado {
+  text-align: center;
 }
-.demostracion{
-    margin-top: 30px;
-    background-color: #795f5f4f;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+
+.centrado .demostracion {
+  margin-top: 30px;
+  background-color: #795f5f4f;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
 }
-.videos{
-    margin: 1rem;
-    padding-bottom: 20px;
+
+.centrado .videos {
+  margin: 1rem;
+  padding-bottom: 20px;
 }
-.videosp{
-    margin: 20px;
+
+.centrado .videos .videosp {
+  margin: 20px;
 }
+
 /* fin de videos */
 /* inicio de tienda */
-.product-row{
-    padding: 2%;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 3%;
+.productos {
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  background-color: #807d7d;
 }
-.card{
-    width: 400px;
-    border: 1px solid #000;
-    margin-bottom: 20px;
-    text-align: center;
+
+.product-row {
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 3%;
 }
-.card-img-top{
-    height: 400px;
+
+.product-row .card {
+  width: 400px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  text-align: center;
 }
-.card:hover{
-    transform: scale(1.05);
-    transition: all 1s;
+
+.product-row .card .card-img-top {
+  height: 400px;
 }
-.card-title{
-    text-align: center;
+
+.product-row .card .card-title {
+  text-align: center;
 }
-.btn-warning{
-    color: #fff;
-    background-color:#7e7e7e;
+
+.product-row .card .btn-warning {
+  color: #fff;
+  background-color: #7e7e7e;
 }
-.btn-warning:hover{
-    background-color:#c0bcbc;
+
+.product-row .card .btn-warning:hover {
+  background-color: #c0bcbc;
 }
+
+.product-row .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 /* fin de tienda */
 /* inicio de contactos */
-.tapiz{
-    background: url(./imágenes/Cuadro.jpg) center;
-    color: #fff;
+.tapiz {
+  background: url(./imágenes/Cuadro.jpg) center;
+  color: #fff;
 }
-.contacto{
-    width: 550px;
-    background: #0000003d;
-    padding: 30px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 6px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-.tusdatos{
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 25px;
-    font-size: 35px;
-}
-.controles{
-    width: 50%;
-    padding: 5px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.datos{
-    display: block;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 5px;
-    font-size: 20px;
-}
-.comentarios{
-    resize: none;
-    border-radius: 5px;
-    padding: 8px 14px;
-    border: 2px solid #000;
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-input[type="submit"]{
-    border-radius: 5px;
-    margin: 10px 0;
-    background: #00b244;
-    color: #fff;
-    padding: 8px 14px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-}
-/* fin de contacto */
 
+.contacto {
+  width: 550px;
+  background: #0000003d;
+  padding: 30px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.contacto .tusdatos {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-size: 35px;
+}
+
+.contacto .datos {
+  display: block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.contacto .controles {
+  width: 50%;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.contacto .comentarios {
+  resize: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  border: 2px solid #000;
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.contacto input[type="submit"] {
+  border-radius: 5px;
+  margin: 10px 0;
+  background: #00b244;
+  color: #fff;
+  padding: 8px 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* fin de contacto */
 @media only screen and (max-width: 480px) {
-    .navbar-dark .navbar-nav .nav-link{
-        font-size: 15px;
-    }
-    .logo img{
-        height: 40px;
-        width: 40px;
-    }
-    .sobre{        
-        font-size: 15px;
-    }
-    .nosotros{
-        font-size: 12px;
-    }
-    .titulo{ 
-        font-size: 15px;
-    }
-    .contenedordeservicios{
-        display: block;
-    }
-    .formasdetrabajo{
-        font-size: 15px;
-        margin: 10px;
-    }
-    .serviciosp{
-        font-size: 12px;
-    }
-    .precios{
-        font-size: 15px;
-    }
-    .table{
-        width: 100%;
-        font-size: 8px;
-    }
-    .redes{
-        font-size: 15px;
-    }
-    .contenedor{
-        display: block;
-    }
-    .variados{
-        font-size: 15px;
-    }
-    .img-thumbnail{
-        width: 250px;
-        height: 250px;
-    }
-    .caracteristicas{
-        font-size: 10px;
-    }
-    .demostracion{
-        font-size: 20px;
-    }
-    .card{
-        width: 300px;
-    }
-    .card-img-top{
-        height: 300px;
-    }
-    .card-title{
-        font-size: 15px;
-    }
-    .btn-warning{
-        font-size: 15px;
-    }
-    .tapiz{
-        background: none;
-        color: #000;
-    }
-    .contacto{
-        width: 300px;
-    }
-    .controles{
-        width: 95%;
-        font-size: 15px;
-    }
-    .tusdatos{
-        font-size: 25px;
-    }
-    .datos{
-        font-size: 18px;
-    }
-    .comentarios{
-        font-size: 10px;
-    }
-    input[type="submit"]{
-        font-size: 15px;
-    }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 15px;
+  }
+  .fondo-nav .logo img {
+    height: 40px;
+    width: 40px;
+  }
+  .sobre {
+    font-size: 15px;
+  }
+  .nosotros {
+    font-size: 12px;
+  }
+  .titulo {
+    font-size: 15px;
+  }
+  .contenedordeservicios {
+    display: block;
+  }
+  .contenedordeservicios .formasdetrabajo {
+    font-size: 15px;
+    margin: 10px;
+  }
+  .contenedordeservicios .serviciosp {
+    font-size: 12px;
+  }
+  .precios {
+    font-size: 15px;
+  }
+  .table {
+    width: 100%;
+    font-size: 8px;
+  }
+  .redes {
+    font-size: 15px;
+  }
+  .contenedor {
+    display: block;
+  }
+  .contenedor .variados {
+    font-size: 15px;
+  }
+  .contenedor .caracteristicas {
+    font-size: 10px;
+  }
+  .contenedor .img-thumbnail {
+    width: 250px;
+    height: 250px;
+  }
+  .centrado .demostracion {
+    font-size: 20px;
+  }
+  .productos {
+    font-size: 15px;
+  }
+  .product-row .card {
+    width: 300px;
+  }
+  .product-row .card .card-img-top {
+    height: 300px;
+  }
+  .product-row .card .card-title {
+    font-size: 15px;
+  }
+  .product-row .card .btn-warning {
+    font-size: 15px;
+  }
+  .tapiz {
+    background: none;
+    color: #000;
+  }
+  .contacto {
+    width: 300px;
+  }
+  .contacto .tusdatos {
+    font-size: 25px;
+  }
+  .contacto .datos {
+    font-size: 18px;
+  }
+  .contacto .controles {
+    width: 95%;
+    font-size: 15px;
+  }
+  .contacto .comentarios {
+    font-size: 10px;
+  }
+  .contacto input[type="submit"] {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .navbar-dark .navbar-nav .nav-link{
-        font-size: 25px;
-    }
-    .logo img{
-        height: 56px;
-        width: 56px;
-    }
-    .sobre{        
-        font-size: 15px;
-    }
-    .nosotros{
-        font-size: 12px;
-    }
-    .titulo{ 
-        font-size: 25px;
-    }
-    .contenedordeservicios{
-        display: block;
-    }
-    .formasdetrabajo{
-        font-size: 20px;
-        margin: 10px;
-    }
-    .serviciosp{
-        font-size: 15px;
-    }
-    .precios{
-        font-size: 22px;
-    }
-    .table{
-        font-size: 12px;
-    }
-    .contenedor{
-        display: block;
-    }
-    .variados{
-        font-size: 20px;
-    }
-    .img-thumbnail{
-        width: 350px;
-        height: 350px;
-    }
-    .caracteristicas{
-        font-size: 15px;
-    }
-    .demostracion{
-        font-size: 25px;
-    }
-    .card-title{
-        font-size: 20px;
-    }
-    .contacto{
-        width: 400px;
-    }
-    .controles{
-        font-size: 15px;
-    }
-    .datos{
-        font-size: 20px;
-    }
-    .tusdatos{
-        font-size: 30px;
-    }
-    .comentarios{
-        font-size: 14px;
-    }
-    input[type="submit"]{
-        background: #b20009;
-        font-size: 18px;
-    }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 25px;
+  }
+  .fondo-nav .logo img {
+    height: 56px;
+    width: 56px;
+  }
+  .sobre {
+    font-size: 20px;
+  }
+  .nosotros {
+    font-size: 12px;
+  }
+  .titulo {
+    font-size: 20px;
+  }
+  .contenedordeservicios {
+    display: block;
+  }
+  .contenedordeservicios .formasdetrabajo {
+    font-size: 20px;
+    margin: 10px;
+  }
+  .contenedordeservicios .serviciosp {
+    font-size: 15px;
+  }
+  .precios {
+    font-size: 22px;
+  }
+  .table {
+    font-size: 12px;
+  }
+  .contenedor {
+    display: block;
+  }
+  .contenedor .variados {
+    font-size: 20px;
+  }
+  .contenedor .caracteristicas {
+    font-size: 15px;
+  }
+  .contenedor .img-thumbnail {
+    width: 350px;
+    height: 350px;
+  }
+  .centrado .demostracion {
+    font-size: 25px;
+  }
+  .productos {
+    font-size: 20px;
+  }
+  .product-row .card-title {
+    font-size: 20px;
+  }
+  .contacto {
+    width: 400px;
+  }
+  .contacto .tusdatos {
+    font-size: 30px;
+  }
+  .contacto .datos {
+    font-size: 20px;
+  }
+  .contacto .controles {
+    font-size: 15px;
+  }
+  .contacto .comentarios {
+    font-size: 14px;
+  }
+  .contacto input[type="submit"] {
+    background: #b20009;
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .logo img{
-        height: 60px;
-        width: 60px;
-    }
-    .navbar-dark .navbar-nav .nav-link{
-        font-size: 20px;
-    }
-    .variados{
-        font-size: 20px;
-    }
-    .caracteristicas{
-        font-size: 15px;
-    }
-    .img-thumbnail{
-        width: 350px;
-        height: 350px;
-    }
+  .fondo-nav .logo img {
+    height: 60px;
+    width: 60px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 20px;
+  }
+  .contenedor .caracteristicas {
+    font-size: 15px;
+  }
+  .contenedor .img-thumbnail {
+    width: 350px;
+    height: 350px;
+  }
 }
+/*# sourceMappingURL=estilos.css.map */
