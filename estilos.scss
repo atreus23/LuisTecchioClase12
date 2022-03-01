@@ -1,10 +1,15 @@
 $fondopag: #f8f8f8d0;
- $fonavfoo: #795f5fd2;
- $bordes: #000;
- $letras: #fff;
- $backimage: #807d7d;
- $background: #c0bcbc;
- $fontfamily: Georgia, 'Times New Roman', Times, serif;
+$fonavfoo: #795f5fd2;
+$bordes: #000;
+$letras: #fff;
+$backimage: #807d7d;
+$background: #c0bcbc;
+$fontfamily: Georgia, 'Times New Roman', Times, serif;
+
+@mixin tamaño ($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
 
 *{
     margin: 0px;
@@ -18,8 +23,7 @@ $fondopag: #f8f8f8d0;
     background-image: linear-gradient($fonavfoo, $background);
 
     .logo img{
-        height: 80px;
-        width: 80px;
+        @include tamaño (80px, 80px);
     }    
 
     .navbar-toggler{
@@ -58,16 +62,22 @@ $fondopag: #f8f8f8d0;
 .sillon{
     width: 100%;
 }
+.principal{
+    @extend .sobre;
+    text-transform: uppercase;
+    text-shadow: 2px 5px 5px;
+    margin: 10px;
+}
 .sobre{
     text-align: center;
 }
 .nosotros{
-    text-align: center;
+    @extend .sobre;
     padding: 15px;
 }
 .titulo{
+    @extend .sobre;
     font-size: 30px;
-    text-align: center;
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -76,33 +86,58 @@ $fondopag: #f8f8f8d0;
     display: flex;
 
     .formasdetrabajo{
+        @extend .sobre;
         background-color: $fonavfoo;
-        text-align: center;
         font-size: 25px;
     }
 
     .serviciosp{
-        text-align: center;
+        @extend .sobre;
         font-size: 18px;
         margin: 20px;
     }
 }
 .precios{
+    @extend .sobre;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-align: center;
 }
 .table{
+    @extend .sobre;
     background-color: $background;
     width: 80%;
     margin: 0 auto;
-    text-align: center;
     margin-bottom: 30px;
 }
-.findepagina{ 
+.findepagina{
+    @extend .sobre;
     width: 100%;
     background-image: linear-gradient($background, $fonavfoo);
-    text-align: center;
+
+    .redes{
+        font-size: 25px;
+    }
+
+    .iconos{
+        display: grid;
+        grid-template-columns: 75px 75px 75px;
+        justify-content: center;
+    }
+
+    $redes: (
+        red1: #dd2a7e,
+        red2: #2956a3,
+        red3: #42e821,
+        );
+    @each $red, $color in $redes {
+        .btn--#{$red} {
+            margin: auto;
+            &:hover {
+                background-color: $color;
+                border-radius: 50px;
+            }
+        }
+    }
 
     .derechos{
         width: 100%;
@@ -137,8 +172,7 @@ $fondopag: #f8f8f8d0;
     }
 
     .img-thumbnail{
-        width: 500px;
-        height: 500px;
+        @include tamaño (500px, 500px);
         margin-bottom: 30px;
         border-radius: 10px;
     }
@@ -192,6 +226,7 @@ $fondopag: #f8f8f8d0;
 
         .card-title{
             text-align: center;
+            font-size: 25px;
         }
         
         .btn-warning{
@@ -213,9 +248,9 @@ $fondopag: #f8f8f8d0;
 /* inicio de contactos */
 .tapiz{
     background: url(./imágenes/Cuadro.jpg) center;
-    color: #fff;
 }
 .contacto{
+    color: $letras;
     width: 550px;
     background: #0000003d;
     padding: 30px;

@@ -15,8 +15,8 @@
 }
 
 .fondo-nav .logo img {
-  height: 80px;
   width: 80px;
+  height: 80px;
 }
 
 .fondo-nav .navbar-toggler {
@@ -72,18 +72,22 @@
   width: 100%;
 }
 
-.sobre {
+.principal {
+  text-transform: uppercase;
+  text-shadow: 2px 5px 5px;
+  margin: 10px;
+}
+
+.sobre, .principal, .nosotros, .titulo, .contenedordeservicios .formasdetrabajo, .contenedordeservicios .serviciosp, .precios, .table, .findepagina {
   text-align: center;
 }
 
 .nosotros {
-  text-align: center;
   padding: 15px;
 }
 
 .titulo {
   font-size: 30px;
-  text-align: center;
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -97,12 +101,10 @@
 
 .contenedordeservicios .formasdetrabajo {
   background-color: #795f5fd2;
-  text-align: center;
   font-size: 25px;
 }
 
 .contenedordeservicios .serviciosp {
-  text-align: center;
   font-size: 18px;
   margin: 20px;
 }
@@ -110,14 +112,12 @@
 .precios {
   margin-top: 20px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .table {
   background-color: #c0bcbc;
   width: 80%;
   margin: 0 auto;
-  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -125,7 +125,47 @@
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#c0bcbc), to(#795f5fd2));
   background-image: linear-gradient(#c0bcbc, #795f5fd2);
-  text-align: center;
+}
+
+.findepagina .redes {
+  font-size: 25px;
+}
+
+.findepagina .iconos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75px 75px 75px;
+      grid-template-columns: 75px 75px 75px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.findepagina .btn--red1 {
+  margin: auto;
+}
+
+.findepagina .btn--red1:hover {
+  background-color: #dd2a7e;
+  border-radius: 50px;
+}
+
+.findepagina .btn--red2 {
+  margin: auto;
+}
+
+.findepagina .btn--red2:hover {
+  background-color: #2956a3;
+  border-radius: 50px;
+}
+
+.findepagina .btn--red3 {
+  margin: auto;
+}
+
+.findepagina .btn--red3:hover {
+  background-color: #42e821;
+  border-radius: 50px;
 }
 
 .findepagina .derechos {
@@ -229,6 +269,7 @@
 
 .product-row .card .card-title {
   text-align: center;
+  font-size: 25px;
 }
 
 .product-row .card .btn-warning {
@@ -251,10 +292,10 @@
 /* inicio de contactos */
 .tapiz {
   background: url(./imágenes/Cuadro.jpg) center;
-  color: #fff;
 }
 
 .contacto {
+  color: #fff;
   width: 550px;
   background: #0000003d;
   padding: 30px;
@@ -316,10 +357,10 @@
     font-size: 15px;
   }
   .fondo-nav .logo img {
-    height: 40px;
     width: 40px;
+    height: 40px;
   }
-  .sobre {
+  .sobre, .principal, .nosotros, .titulo, .contenedordeservicios .formasdetrabajo, .contenedordeservicios .serviciosp, .precios, .table, .findepagina {
     font-size: 15px;
   }
   .nosotros {
@@ -345,7 +386,7 @@
     width: 100%;
     font-size: 8px;
   }
-  .redes {
+  .findepagina .redes {
     font-size: 15px;
   }
   .contenedor {
@@ -381,9 +422,9 @@
   }
   .tapiz {
     background: none;
-    color: #000;
   }
   .contacto {
+    color: #000;
     width: 300px;
   }
   .contacto .tusdatos {
@@ -409,10 +450,10 @@
     font-size: 25px;
   }
   .fondo-nav .logo img {
-    height: 56px;
-    width: 56px;
+    width: 50px;
+    height: 50px;
   }
-  .sobre {
+  .sobre, .principal, .nosotros, .titulo, .contenedordeservicios .formasdetrabajo, .contenedordeservicios .serviciosp, .precios, .table, .findepagina {
     font-size: 20px;
   }
   .nosotros {
@@ -482,10 +523,13 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .fondo-nav .logo img {
-    height: 60px;
     width: 60px;
+    height: 60px;
   }
   .navbar-dark .navbar-nav .nav-link {
+    font-size: 20px;
+  }
+  .contenedor .variados {
     font-size: 20px;
   }
   .contenedor .caracteristicas {
