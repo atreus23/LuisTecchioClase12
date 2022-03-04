@@ -40,7 +40,7 @@
     </nav>
     <section class="contacto">
         <h1 class="tusdatos">Dejanos tus datos</h1>
-        <form method="get" enctype="text/plain">
+        <form name="contact" method="POST" data-netlify="true">
             <div>
                 <label class="datos" for="nombre">Nombre</label>
                 <input class="controles" type="text" name="nombre" required>
@@ -51,21 +51,17 @@
             </div>
             <div>
                 <label class="datos" for="tel">Teléfono</label>
-                <input class="controles" type="number">
+                <input class="controles" type="number" name="number">
             </div>
             <div>
                 <label class="datos" for="email">Email</label>
-                <input class="controles" type="email" required>
-            </div>
-            <div>
-                <label class="datos" for="password">Contraseña</label>
-                <input class="controles" type="password" required>
+                <input class="controles" type="email" name="email" required>
             </div>
             <div>
                 <label class="datos" for="comentarios">Comentarios</label>
             </div>
             <div>    
-                <textarea class="comentarios" name="comentarios" id="" cols="42" rows="6" placeholder="Escribe tu comentario"></textarea>
+                <textarea class="comentarios" name="comentarios" id="" cols="38" rows="6" placeholder="Escribe tu comentario"></textarea>
             </div>
             <div>
                 <input type="submit" value="Enviar">

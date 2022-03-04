@@ -164,16 +164,9 @@ $fontfamily: Georgia, 'Times New Roman', Times, serif;
         background-color: $background;
     }
 
-    .caracteristicas{
-        text-align: center;
-        margin: 0 60px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
     .img-thumbnail{
         @include tamaño (500px, 500px);
-        margin-bottom: 30px;
+        margin: 20px;
         border-radius: 10px;
     }
 }

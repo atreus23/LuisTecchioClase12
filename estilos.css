@@ -198,17 +198,10 @@
   background-color: #c0bcbc;
 }
 
-.contenedor .caracteristicas {
-  text-align: center;
-  margin: 0 60px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 .contenedor .img-thumbnail {
   width: 500px;
   height: 500px;
-  margin-bottom: 30px;
+  margin: 20px;
   border-radius: 10px;
 }
 
@@ -395,9 +388,6 @@
   .contenedor .variados {
     font-size: 15px;
   }
-  .contenedor .caracteristicas {
-    font-size: 10px;
-  }
   .contenedor .img-thumbnail {
     width: 250px;
     height: 250px;
@@ -483,9 +473,6 @@
   }
   .contenedor .variados {
     font-size: 20px;
-  }
-  .contenedor .caracteristicas {
-    font-size: 15px;
   }
   .contenedor .img-thumbnail {
     width: 350px;
