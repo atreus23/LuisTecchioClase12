@@ -250,14 +250,14 @@
 }
 
 .product-row .card {
-  width: 400px;
+  width: 300px;
   border: 1px solid #000;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .product-row .card .card-img-top {
-  height: 400px;
+  height: 300px;
 }
 
 .product-row .card .card-title {
@@ -397,12 +397,6 @@
   }
   .productos {
     font-size: 15px;
-  }
-  .product-row .card {
-    width: 300px;
-  }
-  .product-row .card .card-img-top {
-    height: 300px;
   }
   .product-row .card .card-title {
     font-size: 15px;
